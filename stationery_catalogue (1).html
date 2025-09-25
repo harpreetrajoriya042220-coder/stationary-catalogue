@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stationery Catalogue</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0 auto;
+      padding: 20px 40px;
+      max-width: 210mm;
+      background-color: #fdfdfd;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin: 20px 0 30px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 6px 14px;
+      border: 1.5px solid #333;
+      border-radius: 20px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    section {
+      margin-bottom: 45px;
+      page-break-inside: avoid;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0 0 12px;
+      padding-left: 10px;
+      border-left: 5px solid #333;
+      color: #222;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      border: 1px solid #e0e0e0;
+      padding: 10px 8px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    td:nth-child(5),
+    td:nth-child(6) {
+      font-weight: 700;
+      color: #0077cc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    footer strong {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <h1>📒 Stationery Catalogue</h1>
+
+  <nav>
+    <a href="#notebooks">Notebooks & Registers</a>
+    <a href="#copies">Copies (सफेद White Paper)</a>
+  </nav>
+
+  <section id="notebooks">
+    <h2>Notebooks & Registers</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Product Name</th>
+          <th>Size</th>
+          <th>Pages</th>
+          <th>Price (One Piece)</th>
+          <th>Price (Set)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Tiger Spiral</td><td>A4</td><td>200</td><td>₹70</td><td>₹65</td></tr>
+        <tr><td>2</td><td>Tiger Spiral</td><td>A4</td><td>300</td><td>₹85</td><td>₹80</td></tr>
+        <tr><td>3</td><td>Yellow Rough Register</td><td>A4</td><td>236</td><td>₹50</td><td>₹45</td></tr>
+        <tr><td>4</td><td>Yellow Rough Register</td><td>A4</td><td>284</td><td>₹70</td><td>₹65</td></tr>
+        <tr><td>5</td><td>White Register</td><td>A4</td><td>204</td><td>₹50</td><td>₹45</td></tr>
+        <tr><td>6</td><td>White</td><td>A4</td><td>248</td><td>₹65</td><td>₹60</td></tr>
+        <tr><td>7</td><td>White L/M Register</td><td>A4</td><td>128</td><td>₹30</td><td>₹25</td></tr>
+        <tr><td>8</td><td>White L/M Register</td><td>A4</td><td>156</td><td>₹40</td><td>₹35</td></tr>
+        <tr><td>9</td><td>Tiger Spiral</td><td>A4</td><td>400</td><td>₹115</td><td>₹110</td></tr>
+        <tr><td>10</td><td>Tiger Spiral</td><td>A4</td><td>500</td><td>₹130</td><td>₹125</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="copies">
+    <h2>Copies (सफेद White Paper)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Size</th>
+          <th>Pages</th>
+          <th>Price (One Piece)</th>
+          <th>Price (Set)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>English L/M</td><td>-</td><td>132</td><td>₹30</td><td>₹25</td></tr>
+        <tr><td>Hindi (Plain) L/M</td><td>-</td><td>132</td><td>₹30</td><td>₹25</td></tr>
+        <tr><td>Math L/M</td><td>-</td><td>132</td><td>₹30</td><td>₹25</td></tr>
+        <tr><td>Math (with graph/grid) L/M</td><td>-</td><td>92</td><td>₹20</td><td>₹18</td></tr>
+        <tr><td>3 IN 1</td><td>-</td><td>200</td><td>₹40</td><td>₹35</td></tr>
+        <tr><td>3 IN 1</td><td>-</td><td>92</td><td>₹20</td><td>₹18</td></tr>
+        <tr><td>3 IN 1</td><td>-</td><td>132</td><td>₹30</td><td>₹25</td></tr>
+        <tr><td>English L/M</td><td>-</td><td>92</td><td>₹20</td><td>₹18</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p><strong>Stationery World</strong> • Best Quality at Factory Rates • Contact: +91-9876543210</p>
+  </footer>
+</body>
+</html>
